@@ -1,0 +1,354 @@
+@charset "utf-8";
+
+/* Global
+--------------------------------------------------- */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  background-color: #F4F4F4;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.btn-submit {
+  background-color: #E8491D;
+  height: 33px;
+  border: none;
+  color: #FFF;
+  padding: 0 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.page-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: 0 1px 2px rgba(0,0,0, .3);
+}
+
+/* Header
+--------------------------------------------------- */
+
+header {
+  background-color: #35424A;
+  color: #FFF;
+  padding-top: 25px;
+  min-height: 70px;
+  border-bottom: 4px solid #E8491D;
+}
+
+header a {
+  color: #FFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header ul {
+  padding: 0;
+  margin: 0;
+}
+
+header li {
+  display: inline;
+  padding: 0 20px;
+}
+
+header .logo {
+  float: left;
+}
+
+header .logo h1 {
+  margin: 0;
+}
+
+header .menu {
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight,
+header .current a {
+  color: #E8491D;
+}
+
+header a:hover {
+  border-bottom: 1px solid #E8491D;
+  padding-bottom: 5px;
+}
+
+/* Showcase
+--------------------------------------------------- */
+
+.showcase {
+  min-height: 400px;
+  background: url('../img/showcase.jpg') no-repeat 0 -380px;
+  text-align: center;
+  color: #FFF;
+}
+
+.showcase h1 {
+  margin-top: 120px;
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+
+.showcase p {
+  font-size: 20px;
+}
+
+/* Newsletter
+--------------------------------------------------- */
+
+.newsletter {
+  background-color: #35424A;
+  color: #FFF;
+  padding: 10px;
+}
+
+.newsletter h1 {
+  float: left;
+  margin: 10px 0 10px 0;
+  font-size: 18px;
+}
+
+.newsletter form {
+  float: right;
+  margin-top: 6px;
+}
+
+.newsletter input[type="email"] {
+  padding: 4px;
+  height: 20px;
+  width: 250px;
+}
+
+/* Boxes
+--------------------------------------------------- */
+
+.boxes {
+  margin-top: 20px;
+}
+
+.boxes .box {
+  float: left;
+  width: 30%;
+  text-align: center;
+  padding: 10px;
+}
+
+.box img {
+  width: 90px; /* Fazer o upload das imagens na medida certa de uso SEMPRE */
+}
+
+/* Main Content
+--------------------------------------------------- */
+
+.main-content {
+  float: left;
+  width: 60%;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.main-content p {
+  text-align: justify;
+}
+
+/* Photos
+--------------------------------------------------- */
+
+.photos {
+  clear: both;
+}
+
+.photos img {
+  margin: 10px 30px 20px 0;
+  border: 5px solid #FFF;
+  box-shadow: 2px 2px 7px rgba(0,0,0, .5);
+}
+
+/* Sidebar
+--------------------------------------------------- */
+
+.sidebar {
+  float: left;
+  width: 30%;
+  margin-top: 30px;
+  margin-left: 10px;
+  background-color: #35424A;
+  padding: 15px;
+  color: #FFF;
+}
+
+.sidebar h3 {
+  margin-top: 10px;
+}
+
+.sidebar p {
+  text-align: justify;
+}
+
+/* Services
+--------------------------------------------------- */
+
+.list-items {
+  padding: 0;
+}
+
+.list-items li {
+  list-style: none;
+  background-color: #CCC;
+  border: 1px solid #E6E6E6;
+  margin-bottom: 20px;
+  padding: 0 15px;
+  font-size: 14px;
+  box-shadow: 1px 1px 7px rgba(0,0,0, .5);
+}
+
+.list-items h3 {
+  color: #E8491D;
+}
+
+/* Quote Form
+--------------------------------------------------- */
+
+.form label {
+  display: block;
+}
+
+.form input, .form textarea {
+  margin-bottom: 10px;
+  width: 90%;
+  padding: 5px;
+}
+
+.form textarea {
+  height: 100px;
+  resize: vertical;
+  font-size: 14px;
+}
+
+/* Footer
+--------------------------------------------------- */
+
+.footer {
+  background-color: #E8491D;
+  padding: 20px;
+  margin-top: 15px;
+  text-align: center;
+  color: #FFF;
+}
+
+.footer a {
+  float: right;
+  font-size: 12px;
+  text-decoration: none;
+  color: #FFF;
+}
+
+.footer a:hover {
+  color: #DDD;
+}
+
+/* Media
+--------------------------------------------------- */
+
+@media(max-width: 768px){
+  header .logo,
+  header nav,
+  header nav li,
+  .newsletter h1,
+  .boxes .box,
+  .newsletter form,
+  .main-content,
+  .sidebar,
+  .photos {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  header nav {
+    padding-bottom: 20px;
+  }
+  .showcase h1 {
+    margin-top: 40px;
+  }
+  .newsletter form {
+    margin-bottom: 10px;
+  }
+
+  .newsletter form input[type="email"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 7px;
+  }
+
+  .newsletter form button {
+    display: block;
+    width: 100%;
+  }
+
+  .footer a {
+    margin-top: 30px;
+    font-size: 10px;
+  }
+
+  .sidebar {
+    margin: 0;
+  }
+  .sidebar p {
+    padding-right: 30px;
+  }
+
+  .sidebar h3 {
+    margin-left: -30px;
+  }
+
+  .photos {
+    padding: 25px 15px 0;
+  }
+
+  .form {
+    padding-right: 25px;
+  }
+
+  .form button {
+    width: 92%;
+  }
+
+  .form label {
+    text-align: left;
+    padding-left: 21px;
+  }
+
+}
+
+@media(max-width: 480px) {
+  .form {
+    padding-right: 28px;
+  }
+  .form label {
+    padding-left: 7px;
+  }
+  .form button {
+    width: 95%;
+  }
+  .showcase h1 {
+    margin-top: 25px;
+    font-size: 40px;
+  }
+  .showcase p {
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+}
